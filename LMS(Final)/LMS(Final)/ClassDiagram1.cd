@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="LMS_Final_.BL.users" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAiAAAAFAKEEAAgAAAAKgAYECgCELCAaAAMAwggExAA=</HashCode>
+      <FileName>BL\users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.BL.student" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAyQAEAFwKEEAAAAEAgIAAIEIgCALGAeAAMAgAgEwgA=</HashCode>
+      <FileName>BL\student.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="history" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LMS_Final_.BL.record" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQABIBAAAEEABAgAAAAAAAAAAAACAEAACAAAAAAQA=</HashCode>
+      <FileName>BL\record.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.BL.detailBooks" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAiCiAKIAICAAAAEgAAIAAAAIIEIAAgCAAAgIDAAA=</HashCode>
+      <FileName>BL\detailBooks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.BL.index" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAEAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\index.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.DL.usersDL" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBgAgAAAAAAABBEAAAgIAgACAQIQBAAICBAAAQA=</HashCode>
+      <FileName>DL\usersDL.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="user" />
+      <Field Name="viewlist" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LMS_Final_.DL.detailBooksDL" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAIBAAQAAAAQkAABAAAAEAAAAAACAAAAgAAAIAAAI=</HashCode>
+      <FileName>DL\detailBooksDL.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="bookDetail" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="LMS_Final_.adminUI" Collapsed="true">
+    <Position X="3.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgKIEACCAMOBAACwCQAACOYSgCAAAAAAAAgQBAcAk=</HashCode>
+      <FileName>adminUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.bookA" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DgAAFAIBADCG/BEABACAjIASAAACBAAIxQQAACAAALA=</HashCode>
+      <FileName>bookA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.removeB" Collapsed="true">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAEAAAACAAaBEAAACAgAASAAACAAAIhAAAACAAAAA=</HashCode>
+      <FileName>removeB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.removeU" Collapsed="true">
+    <Position X="2.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9QAgDAIGACAEBBAAAACIDgECAAQABAAIFgBAAAAEBAA=</HashCode>
+      <FileName>removeU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.searchB" Collapsed="true">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAEAAAACAAaBEAAACAgAASAAACAAAIhAAAACAAAAA=</HashCode>
+      <FileName>searchB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.unavailable" Collapsed="true">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAaBEAAACAwAACACACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>unavailable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.viewb" Collapsed="true">
+    <Position X="4" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAABACAAaBEAAACAgAACACACAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>viewb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.viewU" Collapsed="true">
+    <Position X="5.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAACAAaBEAAACAwABCACACAAAAAAAABAAAAAA=</HashCode>
+      <FileName>viewU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.reviewV" Collapsed="true">
+    <Position X="5.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAABACAAaBEAAACAwAACACACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>reviewV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.changeD" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAynAcEACAH/hMEAACMjoECAASGBEAKBgIAAwAEDDA=</HashCode>
+      <FileName>changeD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.complainV" Collapsed="true">
+    <Position X="7.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAaBEAAACAwAACACACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>complainV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.userUI" Collapsed="true">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABACoEAACAkABAgAwCAASCO4AgCAAAABAAAgQBAcAg=</HashCode>
+      <FileName>userUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.CopyOfviewb" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAABACAAaBEAAACAgAACACACAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>viewb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.borrowB" Collapsed="true">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9QAgDAICACAEBBBAAACIDgECAAQABAAIcAAAAAAEBAA=</HashCode>
+      <FileName>borrowB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.bookReturn" Collapsed="true">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEIQFACAC/BEAAACAyAACABACBAAAAFAAAAIAAAA=</HashCode>
+      <FileName>bookReturn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.changeDU" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAynAcEACAH/hMEAACMjoECAASGBEAKBgIAAwAEDDA=</HashCode>
+      <FileName>changeDU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.complainA" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAEAAEACAC/BEAAhCAmAASACECBgAIAAIIAQAAAAA=</HashCode>
+      <FileName>complainA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.fine" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9QAgDAIGACAEBBAAAACIDgECAAQADAAIEAAAAAAEBAA=</HashCode>
+      <FileName>fine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.reviewA" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEACAA6BEAAACAgAASAAACAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>reviewA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.viewH" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAACAAaBEAAACAwAACACACAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>viewH.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LMS_Final_.CopyOfsearchB" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAEAAAACAAaBEAAACAgAASAAACAAAIhAAAACAAAAA=</HashCode>
+      <FileName>searchB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

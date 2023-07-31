@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="battlefieldoop.GameGL.Game" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <AssociationLine Name="bulletE" Type="battlefieldoop.GameGL.enemybullet">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.069" Y="0.68" Height="0.182" Width="1.895" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="bullets" Type="battlefieldoop.GameGL.Bullet">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.217" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAACAIIAAAABAAAIAAAAAAAAAAYAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="bulletE" />
+      <Field Name="ghosts" />
+      <Field Name="bullets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.GameBattlePlayer" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAIABAAAQAAAASQAAAJYFMAAAIAAACDACAAAQAAAAA=</HashCode>
+      <FileName>GameGL\GameBattlePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.GameObject" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAABAAAAEgAAQBAAAEAAEAAAABA=</HashCode>
+      <FileName>GameGL\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.Bullet" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAIACAEAAAABAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.enemy" Collapsed="true">
+    <Position X="11" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUABCAgAAAAAIASAQAABQBEQAAIAAAIBECAAAAAAAAA=</HashCode>
+      <FileName>GameGL\enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.enemybullet" Collapsed="true">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\enemybullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.mainPlayerBullet" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\mainPlayerBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.HorizontalGhost" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAAAASQAAABABMAAQAAAAABAAAAAAAAAAo=</HashCode>
+      <FileName>GameGL\HorizontalGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.RandomGhost" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAASAAAABABEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\RandomGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.SmartGhost" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAAAASQAAABABMAAQAAAQABAAAAAAAAAAg=</HashCode>
+      <FileName>GameGL\SmartGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.VerticalGhost" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAASAAAABABEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\VerticalGhost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.Henemy2" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAAAASQAAABABMAAQAAAAABAAAAAAAAAAo=</HashCode>
+      <FileName>GameGL\Henemy2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.GameCell" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAQAQAAAAwACACIAAADgAAAAAAACYAA=</HashCode>
+      <FileName>GameGL\GameCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="battlefieldoop.GameGL.GameGrid" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAEIAAABAAIACAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\GameGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="battlefieldoop.GameGL.GameDirection" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAIAACACAAAAAAAI=</HashCode>
+      <FileName>GameGL\GameDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="battlefieldoop.GameGL.GameObjectType" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAMAAAAAAQAAAABAAAAAAAAAAIAAAABAEAA=</HashCode>
+      <FileName>GameGL\GameObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

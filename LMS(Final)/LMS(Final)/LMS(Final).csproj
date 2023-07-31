@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40100818-951B-415D-9294-2E9C844ECAD2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LMS_Final_</RootNamespace>
+    <AssemblyName>LMS%28Final%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\Bilal\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\index.cs" />
+    <Compile Include="bookA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bookA.Designer.cs">
+      <DependentUpon>bookA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUI.Designer.cs">
+      <DependentUpon>adminUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\detailBooks.cs" />
+    <Compile Include="BL\record.cs" />
+    <Compile Include="BL\student.cs" />
+    <Compile Include="BL\users.cs" />
+    <Compile Include="bookReturn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bookReturn.Designer.cs">
+      <DependentUpon>bookReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrowB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="borrowB.Designer.cs">
+      <DependentUpon>borrowB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="changeD.Designer.cs">
+      <DependentUpon>changeD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeDU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="changeDU.Designer.cs">
+      <DependentUpon>changeDU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="complainA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="complainA.Designer.cs">
+      <DependentUpon>complainA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="complainV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="complainV.Designer.cs">
+      <DependentUpon>complainV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\detailBooksDL.cs" />
+    <Compile Include="DL\usersDL.cs" />
+    <Compile Include="fine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fine.Designer.cs">
+      <DependentUpon>fine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="removeB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="removeB.Designer.cs">
+      <DependentUpon>removeB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="removeU.Designer.cs">
+      <DependentUpon>removeU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reviewA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reviewA.Designer.cs">
+      <DependentUpon>reviewA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reviewV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reviewV.Designer.cs">
+      <DependentUpon>reviewV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="searchB.Designer.cs">
+      <DependentUpon>searchB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unavailable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="unavailable.Designer.cs">
+      <DependentUpon>unavailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userUI.Designer.cs">
+      <DependentUpon>userUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewb.Designer.cs">
+      <DependentUpon>viewb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewH.Designer.cs">
+      <DependentUpon>viewH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewU.Designer.cs">
+      <DependentUpon>viewU.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminUI.resx">
+      <DependentUpon>adminUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookA.resx">
+      <DependentUpon>bookA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookReturn.resx">
+      <DependentUpon>bookReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrowB.resx">
+      <DependentUpon>borrowB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeD.resx">
+      <DependentUpon>changeD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeDU.resx">
+      <DependentUpon>changeDU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="complainA.resx">
+      <DependentUpon>complainA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="complainV.resx">
+      <DependentUpon>complainV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fine.resx">
+      <DependentUpon>fine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="removeB.resx">
+      <DependentUpon>removeB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeU.resx">
+      <DependentUpon>removeU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reviewA.resx">
+      <DependentUpon>reviewA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reviewV.resx">
+      <DependentUpon>reviewV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchB.resx">
+      <DependentUpon>searchB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unavailable.resx">
+      <DependentUpon>unavailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userUI.resx">
+      <DependentUpon>userUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewb.resx">
+      <DependentUpon>viewb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewH.resx">
+      <DependentUpon>viewH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewU.resx">
+      <DependentUpon>viewU.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Animation.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.AnimationCompletedEventArg.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Controller.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.DoubleBitmapForm.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Flags+WindowStyles.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Flags.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.IFControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Material.AnimationCustomQuadratic.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Material.AnimationEaseInOut.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Material.AnimationEaseOut.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Material.AnimationLinear.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Material.AnimationManager+AnimationFinished.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Material.AnimationManager+AnimationProgress.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.Material.AnimationManager.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.NonLinearTransfromNeededEventArg.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.PointFConverter.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Animation.TransfromNeededEventArg.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Lib.GraphicsHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Lib.OtherHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Lib.ScrollBar.DataGridViewScrollHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Lib.ScrollBar.ListViewScrollHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Lib.ScrollBar.PanelScrollHelper+HScrollBarPanelHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Lib.ScrollBar.PanelScrollHelper+VScrollBarPanelHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Lib.ScrollBar.PanelScrollHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Licensing.Licensing.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.Licensing.Summary.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaAdvenceButton+Posisition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaAdvenceButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaAdvenceTileButton+Posisition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaAdvenceTileButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaAnimateWindow+AnimateWindowType.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaAnimateWindow.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaCheckBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaCircleButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaCirclePictureBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaCircleProgressBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaColorTransition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaComboBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaContextMenuStrip.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaControlBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaDataGridView.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaDataGridViewAlternatingRowsStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaDataGridViewHeaderStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaDataGridViewRowsStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaDataGridViewThemeStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaDateTimePicker.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaDragControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaElipse.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaElipsePanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGauge.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGoogleSwitch.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGradient2Panel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGradientButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGradientCircleButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGradientPanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGradientTileButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGroupBox+Posisition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaGroupBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaHScrollBar+ScrollValueChangedDelegate.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaHScrollBar+WinApi.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaHScrollBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaImageButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaImageCheckBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaImageRadioButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaImageReplaceColor.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaLabel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaLinePanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaLineTextBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaLinkLabel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaMediumCheckBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaMediumRadioButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaMetroTrackBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaMetroVTrackBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaMouseStateHelper+MouseStateChangedEventHandler.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaMouseStateHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaNumeric+Posisition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaNumeric.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaPanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaPictureBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaProgressBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaRadioButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaResize.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaResizeControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaSeparator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaShadowPanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaSwitch.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaTextBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaTileButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaToolStripProfessionalRenderer.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaTrackBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaTransfarantPictureBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaTransition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaVProgressBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaVScrollBar+ScrollValueChangedDelegate.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaVScrollBar+WinApi.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaVScrollBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaVSeparator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaVTrackBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaWinCircleProgressIndicator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.GunaWinSwitch.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.ShadowForm+BLENDFUNCTION.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.ShadowForm+Corners.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.ShadowForm+SetWindowPosFlags.datasource" />
+    <None Include="Properties\DataSources\Guna.UI.WinForms.ShadowForm.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.Animation.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.AnimationCompletedEventArg.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.Animator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.Controller.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.DoubleBitmapControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.DoubleBitmapForm.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.Flags+WindowStyles.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.Flags.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.IFakeControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.NonLinearTransfromNeededEventArg.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.PointFConverter.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.TransfromHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.AnimatorNS.TransfromNeededEventArg.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ButtonDesigner+ButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CheckBoxDesigner+CheckBoxActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CheckBoxDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CircleButtonDesigner+CircleButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CircleButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CirclePictureBoxDesigner+CirclePictureBoxActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CirclePictureBoxDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CircleProgressBarDesigner+CircleProgressBarActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CircleProgressBarDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ComboBoxDesigner+ComboBoxActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ComboBoxDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CustomCheckBoxDesigner+CustomCheckBoxActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CustomCheckBoxDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CustomRadioButtonDesigner+CustomRadioButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.CustomRadioButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.DateTimePickerDesigner+DateTimePickerActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.DateTimePickerDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.GradientButtonDesigner+GradientButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.GradientButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.GradientCircleButtonDesigner+GradientCircleButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.GradientCircleButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ImageButtonDesigner+ImageButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ImageButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ImageCheckBoxDesigner+ImageCheckBoxActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ImageCheckBoxDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ImageRadioButtonDesigner+ImageRadioButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ImageRadioButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.NumericUpDownDesigner+NumericUpDownActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.NumericUpDownDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.PictureBoxDesigner+PictureBoxActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.PictureBoxDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ProgressIndicatorDesigner+ProgressIndicatorActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ProgressIndicatorDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.RadioButtonDesigner+RadioButtonActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.RadioButtonDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ScrollBarDesigner+ScrollBarActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ScrollBarDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.SeparatorDesigner+SeparatorActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.SeparatorDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ShapesDesigner+ShapeActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.ShapesDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.TextBoxDesigner+TextBoxActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.TextBoxDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.TrackBarDesigner+TrackBarActionList.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Designer.TrackBarDesigner.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Material.Animation.AnimationCustomQuadratic.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Material.Animation.AnimationEaseInOut.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Material.Animation.AnimationEaseOut.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Material.Animation.AnimationLinear.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Material.Animation.AnimationManager+AnimationFinished.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Material.Animation.AnimationManager+AnimationProgress.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Material.Animation.AnimationManager.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+ABE.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+ABM.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+APPBARDATA.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+ARGB.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+BLENDFUNCTION.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+Bool.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+HitTest.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+Messages.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+MINMAXINFO.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+NCCALCSIZE_PARAMS.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+POINT.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+RECT.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+ScrollBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+SIZE.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+TabControlHitTest.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+TCHITTESTINFO.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi+WindowPos.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.Native.WinApi.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2AnimateWindow+AnimateWindowType.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2AnimateWindow.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2BorderlessForm+AnimateWindowType.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2BorderlessForm.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2Button.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2CheckBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2Chip.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2CircleButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2CirclePictureBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2CircleProgressBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ColorTransition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ComboBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ContainerControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ContextMenuStrip.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ControlBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ControlFocusHandler.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2CustomCheckBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2CustomGradientPanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2CustomRadioButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DataGridView.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DataGridViewAlternatingRowsStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DataGridViewHeaderStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DataGridViewRowsStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DataGridViewStyler.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DataGridViewThemeStyle.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DateTimePicker.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2DragControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2Elipse.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2GradientButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2GradientCircleButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2GradientPanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2GradientTileButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2GroupBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2HScrollBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2HtmlLabel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2HtmlToolTip.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ImageButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ImageCheckBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ImageRadioButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2MessageDialog.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2MouseStateHandler.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2NotificationPaint.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2NumericUpDown.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2Panel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2PictureBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ProgressBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ProgressIndicator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2RadialGauge.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2RadioButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2RatingStar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ResizeBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ResizeForm.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2Separator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ShadowForm.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ShadowPanel+ShadowMode.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ShadowPanel.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2Shapes.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ShapesTool.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2TabControl+TabButtonState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2TabControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2TaskBarProgress+TaskbarStates.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2TaskBarProgress.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2TextBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2TileButton.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ToggleSwitch.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2ToolStripProfessionalRenderer.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2TrackBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2Transition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2VProgressBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2VScrollBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2VSeparator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2VTrackBar.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Guna2WinProgressIndicator.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.GunaUI_LicenseMgr.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Helpers.DataGridViewScrollHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Helpers.GraphicsBitmapConverter+TernaryRasterOperations.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Helpers.GraphicsBitmapConverter.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Helpers.GraphicsHelper+Posisition.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Helpers.GraphicsHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Helpers.ListViewScrollHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Helpers.PanelScrollHelper.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Interfaces.IControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Interfaces.ICustomButtonControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Interfaces.IImageControl.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Internal.PlaceholderTextBox.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.MessageDialog+TextOnButtons.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.MessageDialog.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ButtonImages.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ButtonState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ComboBoxItemsAppearance.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ComboBoxState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ControlBoxState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.CustomCheckBoxState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.CustomizableEdges.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.CustomRadionButtonState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.DateTimePickerState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ButtonProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+CheckBoxProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ChipProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ComboBoxProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ContextMenuStripProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ControlBoxProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+Controls.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+GradientPanelProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+NumericUpDownProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+PictureBoxProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ProgressBarProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ProgressIndicatorProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+Properties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ResizeBoxProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+ScrollBarProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+SeparatorProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+TextBoxProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions+TrackBarProperties.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.Descriptions.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.GradientButtonState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ImageControlState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.NumericUpDownState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ScrollBarState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ShadowDecoration.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ShadowForm.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.TextBoxState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.ToggleSwitchState.datasource" />
+    <None Include="Properties\DataSources\Guna.UI2.WinForms.Suite.TrackBarState.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.Entities.RColor.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.Entities.RKeyEvent.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.Entities.RMouseEvent.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.Entities.RPoint.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.Entities.RRect.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.Entities.RSize.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RAdapter.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RBrush.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RContextMenu.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RControl.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RFont.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RFontFamily.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RGraphics.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RGraphicsPath+Corner.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RGraphicsPath.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RImage.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Adapters.RPen.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.CssData.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.CssBlock.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.CssBlockSelectorItem.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlImageLoadCallback.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlImageLoadEventArgs.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlLinkClickedEventArgs.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlLinkClickedException.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlRefreshEventArgs.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlRenderErrorEventArgs.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlScrollEventArgs.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Entities.HtmlStylesheetLoadEventArgs.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Handlers.DownloadFileAsyncCallback.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.HtmlContainerInt.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.HtmlRendererUtils.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.Core.Utils.ArgChecker.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.WinForms.Adapters.GraphicsAdapter.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.WinForms.HtmlContainer.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.WinForms.HtmlRender.datasource" />
+    <None Include="Properties\DataSources\TheArtOfDevHtmlRenderer.WinForms.MetafileExtensions.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_menu_male_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animated-transparent-background-check-mark-lb1gygckicpca0fb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdorableMajesticJellyfish-size_restricted.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d3f472b06590a25cb4372ff289d81711_w200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-505865064-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-505865064-170667a-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-07-06 191257.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subscription-Books-talk-bws.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\course_assign_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_book_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_book_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea33694fc494cf644ed1aecb757992d4_w200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vanilla-1s-277px.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

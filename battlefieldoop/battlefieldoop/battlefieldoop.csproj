@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01479065-340D-40B3-9E4E-FCC1175D7CC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>battlefieldoop</RootNamespace>
+    <AssemblyName>battlefieldoop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EZInput, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameGL\Bullet.cs" />
+    <Compile Include="GameGL\enemybullet.cs" />
+    <Compile Include="GameGL\Game.cs" />
+    <Compile Include="GameGL\GameCell.cs" />
+    <Compile Include="GameGL\GameDirection.cs" />
+    <Compile Include="GameGL\GameGrid.cs" />
+    <Compile Include="GameGL\GameObject.cs" />
+    <Compile Include="GameGL\GameObjectType.cs" />
+    <Compile Include="GameGL\GameBattlePlayer.cs" />
+    <Compile Include="GameGL\enemy.cs" />
+    <Compile Include="GameGL\Henemy2.cs" />
+    <Compile Include="GameGL\mainPlayerBullet.cs" />
+    <Compile Include="GameGL\HorizontalGhost.cs" />
+    <Compile Include="GameGL\RandomGhost.cs" />
+    <Compile Include="GameGL\SmartGhost.cs" />
+    <Compile Include="GameGL\VerticalGhost.cs" />
+    <Compile Include="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intruction.Designer.cs">
+      <DependentUpon>intruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level2.Designer.cs">
+      <DependentUpon>level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="starting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="starting.Designer.cs">
+      <DependentUpon>starting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intruction.resx">
+      <DependentUpon>intruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level2.resx">
+      <DependentUpon>level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="starting.resx">
+      <DependentUpon>starting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\battlefield-v-screenshot-2018.11.09-00.38.29.31-100780711-orig.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red+Brick+Wall+Seamless+Cover+WM+2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkblue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simplebox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-white-brick-wall-texture-illustration-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlefield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlefield-v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlefield-v-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlefield-death-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man with gun.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rifleman-Slim-Preview_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\villian.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player-rotate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pf-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pf-pic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pf-picc-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire-pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\villian1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d15fy6g-cedfb71a-1b4d-40a7-af73-946f399b45e6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\villian1 oppo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2oppo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robo1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robo1-removebg-previewright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-call-of-duty-black-ops-2-and-games.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d15fy6g-cedfb71a-1b4d-40a7-af73-946f399b45e6right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BATTLE FIELD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAME OVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAME OVER1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,34 @@
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.Form1.resources
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.Properties.Resources.resources
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.GenerateResource.cache
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.CoreCompileInputs.cache
+P:\battlefieldoop\battlefieldoop\bin\Debug\battlefieldoop.exe.config
+P:\battlefieldoop\battlefieldoop\bin\Debug\battlefieldoop.exe
+P:\battlefieldoop\battlefieldoop\bin\Debug\battlefieldoop.pdb
+P:\battlefieldoop\battlefieldoop\bin\Debug\Guna.UI2.dll
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.CopyComplete
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.exe
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.pdb
+P:\battlefieldoop\battlefieldoop\bin\Debug\EZInput.dll
+P:\battlefieldoop\battlefieldoop\bin\Debug\EZInput.xml
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\bin\Debug\battlefieldoop.exe.config
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\bin\Debug\battlefieldoop.exe
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\bin\Debug\battlefieldoop.pdb
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\bin\Debug\EZInput.dll
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\bin\Debug\Guna.UI2.dll
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\bin\Debug\EZInput.xml
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.Form1.resources
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.Properties.Resources.resources
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.GenerateResource.cache
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.CoreCompileInputs.cache
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.CopyComplete
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.exe
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.pdb
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.level2.resources
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.AssemblyReference.cache
+P:\New folder\battlefieldoop\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.starting.resources
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.level2.resources
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.starting.resources
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.intruction.resources
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.GameOver.resources
+P:\battlefieldoop\battlefieldoop\obj\Debug\battlefieldoop.csproj.AssemblyReference.cache

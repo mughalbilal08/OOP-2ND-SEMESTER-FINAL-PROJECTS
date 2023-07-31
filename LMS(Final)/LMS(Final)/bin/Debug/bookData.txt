@@ -1,0 +1,8 @@
+History,War and Peace,Leo Tolstoy,1945,False
+Manga,Sherlock Holmes,Conan Doyle,2010,False
+Manga,Shadow and Bone,Leigh Bardugo,2012,False
+Academic,How to Write a Lot,Paul J.Silvia, 2007,False
+Academic,The Elements of Style,William Strunk Jr., 1918,False
+History,killer,stocks,2000,True
+Academic,maddness,strange,2009,True
+Academic,Stranger,Woakes,2009,False

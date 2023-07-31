@@ -1,0 +1,3 @@
+fakhir, , ,False,False, , ,False
+hassan,No Complaint,EXCELENT,True,True,maddness,strange,True
+ali, ,EXCELENT,False,True,killer,stocks,True
